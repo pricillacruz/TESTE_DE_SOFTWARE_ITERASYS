@@ -1,0 +1,25 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class CarrinhoPage {
+	
+	private WebDriver driver;
+	
+	private By nomeProduto = By.cssSelector("div.product-line-info a");
+	
+	private By precoProduto = By.cssSelector("span.price");
+	
+	private By tamanhoProduto = By.xpath("//div[contains(@class, 'product-line-grid-body')]//div[3]/span[contains(@class, 'value')]");
+	
+	private By corProduto = By.xpath("//div[contains(@class,'product-line-grid-body')]//div[4]/span[contains(@class,'value')]");
+	
+	private By quantidadeProduto = By.cssSelector("input.js-cart-line-product-quantity");
+	
+	public CarrinhoPage(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+
+}
